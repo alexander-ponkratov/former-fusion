@@ -1,6 +1,7 @@
 ---
 import p1 from "../assets/img/1.jpg";
 import Firecard from "./Firecard.astro";
+import RedButton from "./RedButton.astro";
 import RedP from "./RedP.astro";
 import WhiteH2 from "./WhiteH2.astro";
 import WhiteH3 from "./WhiteH3.astro";
@@ -11,12 +12,14 @@ import WhiteH4 from "./WhiteH4.astro";
 <header class="header min-h-[756px]">
   <div class="header__container _container">
     <div class="header__body">
+
       <div
         class="mt-[28px] md:mt-[40px] min-h-[70px] text-white flex flex-wrap justify-center sm:justify-normal items-center gap-2 mb-[40px] md:mb-[80px]"
       >
         <div class="logoW z-10">
           <img src="/src/assets/img/logo.png" alt="logo" class="logo" />
         </div>
+
         <div class="ml-5 menu__wrapper z-10">
           <ul class="min-[800px]:flex gap-x-[35px]">
             <li><a class="text-lg" href="#">О&nbspпечах</a></li>
@@ -25,6 +28,7 @@ import WhiteH4 from "./WhiteH4.astro";
             <li><a class="text-lg" href="#">Сервис</a></li>
           </ul>
         </div>
+
         <div
           class="flex grow max-[500px]:justify-center justify-end mt-2 sm:mt-0 z-10"
         >
@@ -50,6 +54,7 @@ import WhiteH4 from "./WhiteH4.astro";
             </div>
           </div>
         </div>
+        
         <div
           class="hidden absolute min-h-[733px] top-[10px] right-auto sm:right-[16.77%] w-[292px] bg_img"
         >
@@ -57,12 +62,15 @@ import WhiteH4 from "./WhiteH4.astro";
       </div>
 
       <div class="max-w-[668px]">
+
         <div class="mb-[17px] md:mb-[34px]">
           <RedP>Строим за 10 дней</RedP>
         </div>
+
         <div class="mb-[17px] md:mb-[34px]">
           <WhiteH2>Печи из огнестойкого кирпича и глины</WhiteH2>
         </div>
+
         <div class="mb-[30px] md:mb-[60px]">
           <WhiteH3>Для обогрева и приготовления еды</WhiteH3>
         </div>
@@ -73,7 +81,16 @@ import WhiteH4 from "./WhiteH4.astro";
           <Firecard>Черновая<br> кладка печи</Firecard>
           <Firecard>Облицовка<br>  и декор</Firecard>
         </div>
-        <WhiteH4>Подберите печь всего за 1 минуту</WhiteH4>
+
+        <div class="mb-[17px] md:mb-[34px]">
+          <WhiteH4>Подберите печь всего за 1 минуту</WhiteH4>
+        </div>
+
+        <div class="text-center min-[500px]:text-start mb-[45px] min-[500px]:mb-[90px]">
+          <RedButton>ПОДОБРАТЬ ПЕЧЬ</RedButton>
+        </div>
+
+
       </div>
     </div>
   </div>

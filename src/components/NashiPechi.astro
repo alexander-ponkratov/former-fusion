@@ -1,0 +1,88 @@
+---
+import BlackH2 from "./BlackH2.astro";
+import BlackH3 from "./BlackH3.astro";
+import BlackH3S from "./BlackH3S.astro";
+import FireplaceCard from "./FireplaceCard.astro";
+import RedButton from "./RedButton.astro";
+import RedP from "./RedP.astro";
+---
+
+<section class="fireplace">
+  <div class="fireplace__container _container">
+    <div class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10">
+      <div class="left__wrapper max-w-[375px] mx-auto min-[500px]:mx-0">
+        <div class="mt-[45px] min-[500px]:mt-[90px]">
+          <RedP>Ваши дрова</RedP>
+        </div>
+        <div class="mt-[13px] min-[500px]:mt-[26px]">
+          <BlackH2>Наши печи</BlackH2>
+        </div>
+        <div class="mt-[40px] min-[500px]:mt-[80px]">
+          <BlackH3>
+            Мы строим традиционные печи из огнестойкого кирпича марки ША-5. В
+            печах отсутствует металл (кроме дверей), поэтому они не вредные для
+            здоровья, безопасные и долговечные
+          </BlackH3>
+        </div>
+        <div
+          class="text-center min-[500px]:text-start mt-[35px] min-[500px]:mt-[70px]"
+        >
+          <RedButton>
+            <div class="flex items-center gap-x-2">
+              <span>ПОСМОТРЕТЬ ВИДЕО</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512"
+                class="fill-white mt-[2px]"
+                ><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                ></path></svg
+              >
+            </div>
+          </RedButton>
+        </div>
+      </div>
+
+      <div class="right__wrapper max-w-[700px] mx-auto min-[500px]:mx-0">
+        <div class="mt-[45px] min-[500px]:mt-[90px] flex flex-col gap-y-10">
+          <FireplaceCard title="Теплонакопительные">
+            <div class="mt-[10px] min-[500px]:mt-[20px]">
+              <BlackH3S>
+                При разовой протопке печь удерживает тепло и отдает его
+                постепенно <b>на протяжении 12-48 часов</b> (в зависимости от печи).
+                В 5 раз экономнее чугунных печей.
+              </BlackH3S>
+            </div>
+          </FireplaceCard>
+
+          <FireplaceCard title="Безопасные для здоровья">
+            <div class="mt-[10px] min-[500px]:mt-[20px]">
+              <BlackH3S>
+                Наши печи имеют <b>вторичную подачу воздуха в топке</b> (в Европе
+                и США запрещено выпускать печи без вторичной подачи воздуха, так
+                как высвобождается азот, который вредит здоровью). В 5 раз экономнее
+                чугунных печей.
+              </BlackH3S>
+            </div>
+          </FireplaceCard>
+
+          <FireplaceCard title="Экономные">
+            <div class="mt-[10px] min-[500px]:mt-[20px]">
+              <BlackH3S>
+                Благодаря камере вторичного дожигания дымовых газов в наших
+                печах увеличивается её дымовая эффективность <b
+                  >Помещение отапливается быстрее и требует меньший расход дров</b
+                > (на 100 кв.м. примерно 10 м3 на сезон, что меньше расхода чугунной
+                печи).
+              </BlackH3S>
+            </div>
+          </FireplaceCard>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style></style>
