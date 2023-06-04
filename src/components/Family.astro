@@ -1,0 +1,48 @@
+---
+import FireIcon from "./FireIcon.astro";
+import RedP from "./RedP.astro";
+import WhiteH2 from "./WhiteH2.astro";
+import WhiteH4 from "./WhiteH4.astro";
+---
+
+<section class="family min-h-[690px]">
+  <div class="family__container _container">
+    <div class="family__body max-w-[635px] my-[45px] min-[500px]:my-[90px]">
+      <RedP>Семье на радость, соседям на зависть</RedP>
+      <div class="mt-[17px] min-[500px]:mt-[35px]">
+          <WhiteH2>Сделайте уголок настоящего гурмана</WhiteH2>
+      </div>
+      <div class="mt-[30px] min-[500px]:mt-[60px]">
+          <WhiteH4>Скомбинируйте сразу несколько видов печей, например:</WhiteH4>
+      </div>
+      <ul class="flex flex-col gap-y-5 mt-[19px] min-[500px]:mt-[38px]">
+        <li class="flex gap-x-3 items-center">
+          <FireIcon />
+          <WhiteH4>Русскую печь и тандыр</WhiteH4>
+        </li>
+        <li class="flex gap-x-3 items-center">
+            <FireIcon />
+            <WhiteH4>Варочную плиту и коптильню</WhiteH4>
+          </li>
+          <li class="flex gap-x-3 items-center">
+            <FireIcon />
+            <WhiteH4>Помпейскую печь и тандыр</WhiteH4>
+          </li>
+      </ul>
+      <div class="mt-[30px] min-[500px]:mt-[60px]">
+          <RedP>Получите скидку на вторую печь <span class="text-4xl font-extrabold">3000</span> грн</RedP>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .family {
+    background-color: #ffe53b;
+    background-image: linear-gradient(
+      147deg,
+      rgb(86, 77, 78) 0%,
+      rgb(43, 34, 35) 74% /*rgb(234, 140, 85) 74%*/
+    );
+  }
+</style>
