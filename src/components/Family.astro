@@ -1,6 +1,7 @@
 ---
 import FireIcon from "./FireIcon.astro";
 import RedP from "./RedP.astro";
+import WhiteP from "./WhiteP.astro";
 import WhiteH2 from "./WhiteH2.astro";
 import WhiteH4 from "./WhiteH4.astro";
 ---
@@ -30,7 +31,7 @@ import WhiteH4 from "./WhiteH4.astro";
           </li>
       </ul>
       <div class="mt-[30px] min-[500px]:mt-[60px]">
-          <RedP>Получите скидку на вторую печь <span class="text-4xl font-extrabold">3000</span> грн</RedP>
+          <WhiteP>Получите скидку на вторую печь <span class="text-4xl font-extrabold">3000</span> руб.</WhiteP>
       </div>
     </div>
   </div>
@@ -44,5 +45,11 @@ import WhiteH4 from "./WhiteH4.astro";
       rgb(86, 77, 78) 0%,
       rgb(43, 34, 35) 74% /*rgb(234, 140, 85) 74%*/
     );
+  }
+  .family {
+    background: transparent url(../assets/img/back2.jpg) no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    
   }
 </style>
