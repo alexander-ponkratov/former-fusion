@@ -1,1 +1,4 @@
-<h3 class="text-white font-medium text-2xl text-center min-[500px]:text-start"><slot/></h3>
+---
+const { dataAos } = Astro.props;
+---
+<h3 data-aos={dataAos} class="text-white font-medium text-2xl text-center min-[500px]:text-start"><slot/></h3>

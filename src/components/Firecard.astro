@@ -1,9 +1,10 @@
 ---
 import FireIcon from "./FireIcon.astro";
 import WhiteBoldP from "./WhiteBoldP.astro";
+const {dataAos} = Astro.props;
 ---
 
-<div class="flex items-center gap-x-5 w-full min-[500px]:w-1/2">
+<div data-aos={dataAos} class="flex items-center gap-x-5 w-full min-[500px]:w-1/2">
   <FireIcon />
   <WhiteBoldP><slot /></WhiteBoldP>
 </div>

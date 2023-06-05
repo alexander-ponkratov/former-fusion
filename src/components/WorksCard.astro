@@ -2,10 +2,10 @@
 import BlackH2S from "./BlackH2S.astro";
 import BlackP from "./BlackP.astro";
 import RedButton from "./RedButton.astro";
-const { img, title, subtitle } = Astro.props;
+const { img, title, subtitle, dataAos } = Astro.props;
 ---
 
-<div
+<div data-aos={dataAos} 
   class="works__card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
 >
   <a href="#">

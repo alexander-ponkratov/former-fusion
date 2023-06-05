@@ -1,8 +1,9 @@
 ---
-import WhiteH4 from "./WhiteH4.astro";
+const {dataAos} = Astro.props;
+
 ---
 
-<button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-full text-sm px-8 py-4 text-center">
+<button data-aos={dataAos} type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-full text-sm px-8 py-4 text-center">
   <h4 class="text-white font-extrabold text-sm text-center  min-[500px]:text-start"><slot/></h4>
 </button>
 

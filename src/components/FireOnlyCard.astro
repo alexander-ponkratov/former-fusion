@@ -1,0 +1,57 @@
+---
+import BlackH2 from "./BlackH2.astro";
+import BlackH4 from "./BlackH4.astro";
+import BlackH3S from "./BlackH3S.astro";
+import RedP from "./RedP.astro";
+import FireIcon from "./FireIcon.astro";
+import NoticeIcon from "./NoticeIcon.astro";
+import RedButton from "./RedButton.astro";
+
+const { img, alt, redText, title, desc, text1, text2, text3 } = Astro.props;
+const { dataAos } = Astro.props;
+---
+
+<div
+  data-aos={dataAos}
+  class="fireOnly__card flex max-md:flex-col items-center justify-between gap-5"
+>
+  <div class="fireOnly__imgW max-w-[500px] basis-[45%]">
+    <img
+      class="rounded-lg shadow-xl dark:shadow-gray-800"
+      src={img}
+      alt={alt}
+    />
+  </div>
+  <div class="fireOnly__text max-w-[627px] basis-[45%]">
+    <RedP>{redText}</RedP>
+    <div class="mt-[10px] min-[500px]:mt-[20px]">
+      <BlackH2>{title}</BlackH2>
+    </div>
+    <div class="mt-[25px] min-[500px]:mt-[50px]">
+      <BlackH3S>{desc}</BlackH3S>
+    </div>
+    <ul class="mt-[20px] min-[500px]:mt-[40px] flex flex-col gap-y-5">
+      <li class="flex items-center gap-x-3">
+        <FireIcon />
+        <BlackH3S>{text1}</BlackH3S>
+      </li>
+      <li class="flex items-center gap-x-3">
+        <FireIcon />
+        <BlackH3S>{text2}</BlackH3S>
+      </li>
+      <li class="flex items-center gap-x-3">
+        <FireIcon />
+        <BlackH3S>{text3}</BlackH3S>
+      </li>
+    </ul>
+    <div class="flex max-[500px]:flex-col gap-5 items-center mt-[40px]">
+      <div class="flex gap-5">
+        <div class="noticeIconW flex items-center">
+          <NoticeIcon />
+        </div>
+        <BlackH4>Точную цену вашей печи мы огласим после замеров</BlackH4>
+      </div>
+      <RedButton>ВЫЗВАТЬ&nbsp;ЗАМЕРЩИКА</RedButton>
+    </div>
+  </div>
+</div>

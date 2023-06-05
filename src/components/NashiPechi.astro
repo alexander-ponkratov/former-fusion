@@ -9,16 +9,18 @@ import RedP from "./RedP.astro";
 
 <section class="fireplace">
   <div class="fireplace__container _container">
-    <div class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10 mb-[70px] min-[500px]:mb-[140px]">
+    <div
+      class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10 mb-[70px] min-[500px]:mb-[140px]"
+    >
       <div class="left__wrapper max-w-[375px] mx-auto min-[500px]:mx-0">
         <div class="mt-[45px] min-[500px]:mt-[90px]">
-          <RedP>Ваши дрова</RedP>
+          <RedP dataAos="fade-in">Ваши дрова</RedP>
         </div>
         <div class="mt-[13px] min-[500px]:mt-[26px]">
-          <BlackH2>Наши печи</BlackH2>
+          <BlackH2 dataAos="fade-in">Наши печи</BlackH2>
         </div>
         <div class="mt-[40px] min-[500px]:mt-[80px]">
-          <BlackH3>
+          <BlackH3 dataAos="fade-in">
             Мы строим традиционные печи из огнестойкого кирпича марки ША-5. В
             печах отсутствует металл (кроме дверей), поэтому они не вредные для
             здоровья, безопасные и долговечные
@@ -27,7 +29,7 @@ import RedP from "./RedP.astro";
         <div
           class="text-center min-[500px]:text-start mt-[35px] min-[500px]:mt-[70px]"
         >
-          <RedButton>
+          <RedButton dataAos="fade-in">
             <div class="flex items-center gap-x-2">
               <span>ПОСМОТРЕТЬ ВИДЕО</span>
               <svg
@@ -46,8 +48,10 @@ import RedP from "./RedP.astro";
       </div>
 
       <div class="right__wrapper max-w-[700px] mx-auto min-[500px]:mx-0">
-        <div class="mt-[45px] min-[500px]:mt-[90px] flex flex-col gap-y-8 min-[500px]:gap-y-10">
-          <FireplaceCard title="Теплонакопительные">
+        <div
+          class="mt-[45px] min-[500px]:mt-[90px] flex flex-col gap-y-8 min-[500px]:gap-y-10"
+        >
+          <FireplaceCard dataAos="fade-in" title="Теплонакопительные">
             <div class="mt-[10px] min-[500px]:mt-[20px]">
               <BlackH3S>
                 При разовой протопке печь удерживает тепло и отдает его
@@ -57,7 +61,7 @@ import RedP from "./RedP.astro";
             </div>
           </FireplaceCard>
 
-          <FireplaceCard title="Безопасные для здоровья">
+          <FireplaceCard dataAos="fade-in" title="Безопасные для здоровья">
             <div class="mt-[10px] min-[500px]:mt-[20px]">
               <BlackH3S>
                 Наши печи имеют <b>вторичную подачу воздуха в топке</b> (в Европе
@@ -68,7 +72,7 @@ import RedP from "./RedP.astro";
             </div>
           </FireplaceCard>
 
-          <FireplaceCard title="Экономные">
+          <FireplaceCard dataAos="fade-in" title="Экономные">
             <div class="mt-[10px] min-[500px]:mt-[20px]">
               <BlackH3S>
                 Благодаря камере вторичного дожигания дымовых газов в наших
@@ -81,7 +85,6 @@ import RedP from "./RedP.astro";
           </FireplaceCard>
         </div>
       </div>
-
     </div>
   </div>
 </section>

@@ -1,1 +1,4 @@
-<h3 class="text-[var(--black-color)] font-semibold text-md min-[500px]:text-xl"><slot/></h3>
+---
+const {dataAos} = Astro.props;
+---
+<h3 data-aos={dataAos} class="text-[var(--black-color)] font-semibold text-md min-[500px]:text-xl"><slot/></h3>

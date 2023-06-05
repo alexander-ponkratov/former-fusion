@@ -1,1 +1,4 @@
-<p class="text-white font-bold"><slot/></p>
+---
+const { dataAos } = Astro.props;
+---
+<p data-aos={dataAos}  class="text-white font-bold"><slot/></p>

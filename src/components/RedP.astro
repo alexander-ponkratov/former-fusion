@@ -1,4 +1,4 @@
 ---
-
+const {dataAos} = Astro.props;
 ---
-<p class="text-[var(--red-color)] font-semibold text-2xl text-center min-[500px]:text-start"><slot/></p>
+<p data-aos={dataAos} class="text-[var(--red-color)] font-semibold text-2xl text-center min-[500px]:text-start"><slot/></p>
