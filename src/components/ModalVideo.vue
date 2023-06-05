@@ -24,18 +24,19 @@ const props = defineProps<Props>()
 <template>
     <div>
         <!-- Video thumbnail -->
-        <button
-            class="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
-            @click="modalOpen = true" aria-label="Watch the video">
-            <img class="rounded-3xl shadow-2xl transition-shadow duration-300 ease-in-out" :src="props.thumb"
-                :width="props.thumbWidth" :height="props.thumbHeight" alt="Modal video thumbnail" />
-            <!-- Play icon -->
-            <svg class="absolute pointer-events-none group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                xmlns="<http://www.w3.org/2000/svg>" width="72" height="72">
-                <circle class="fill-white" cx="36" cy="36" r="36" fill-opacity=".8" />
-                <path class="fill-indigo-500 drop-shadow-2xl"
-                    d="M44 36a.999.999 0 0 0-.427-.82l-10-7A1 1 0 0 0 32 29V43a.999.999 0 0 0 1.573.82l10-7A.995.995 0 0 0 44 36V36c0 .001 0 .001 0 0Z" />
-            </svg>
+        <button @click="modalOpen = true" aria-label="Смотреть видео" data-aos="fade-in" type="button"
+            class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-full text-sm px-8 py-4 text-center">
+            <h4 class="text-white font-extrabold text-sm text-center  min-[500px]:text-start">
+                <div class="flex items-center gap-x-2">
+                    <span>ПОСМОТРЕТЬ ВИДЕО</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                        class="fill-white mt-[2px]"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                        </path>
+                    </svg>
+                </div>
+            </h4>
         </button>
         <!-- End: Video thumbnail -->
         <TransitionRoot :show="modalOpen" as="template">
@@ -51,7 +52,7 @@ const props = defineProps<Props>()
                     enterFrom="opacity-0 scale-75" enterTo="opacity-100 scale-100" leave="transition ease-out duration-200"
                     leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-75">
                     <div class="max-w-5xl mx-auto h-full flex items-center">
-                        <DialogPanel class="w-full max-h-full rounded-3xl shadow-2xl aspect-video bg-black overflow-hidden">
+                        <DialogPanel class="w-full max-h-full rounded-3xl shadow-2xl aspect-auto bg-black overflow-hidden">
                             <video ref="videoRef" loop controls>
                                 <source :src="props.video" :width="props.videoWidth" :height="props.videoHeight"
                                     type="video/mp4" />
