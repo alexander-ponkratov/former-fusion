@@ -12,6 +12,7 @@ import WhiteH4 from "./WhiteH4.astro";
 ---
 
 <header class="header min-h-[756px]">
+  <div class="absolute min-h-[733px] w-[1920px] h-[500px] bg_img"></div>
   <div class="header__container _container">
     <div class="header__body">
       <div
@@ -55,11 +56,6 @@ import WhiteH4 from "./WhiteH4.astro";
               >
             </div>
           </div>
-        </div>
-
-        <div
-          class="hidden absolute min-h-[733px] top-[10px] right-auto sm:right-[16.77%] w-[292px] bg_img"
-        >
         </div>
       </div>
 
@@ -107,7 +103,6 @@ import WhiteH4 from "./WhiteH4.astro";
 
 <style>
   .header {
-    background-color: #ffe53b;
     background-image: linear-gradient(
       147deg,
       rgb(86, 77, 78) 0%,
@@ -120,11 +115,14 @@ import WhiteH4 from "./WhiteH4.astro";
     height: auto;
   }
   .bg_img {
-    background: transparent url(../assets/img/1.png) no-repeat;
-    background-size: cover;
+    background: url(/src/assets/img/back1.jpg) 70% 80%/ 200px auto no-repeat;
   }
   .mask1 {
-    -webkit-mask-image: linear-gradient(270deg, black, transparent);
-    mask-image: linear-gradient(270deg, black, transparent);
+    mask-image: radial-gradient(
+      circle at 49% 50%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(123, 122, 122, 1) 47%,
+      rgba(0, 0, 0, 1) 100%
+    );
   }
 </style>
