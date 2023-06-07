@@ -12,7 +12,6 @@ import WhiteH4 from "./WhiteH4.astro";
 ---
 
 <header class="header min-h-[756px]">
-  <div class="hidden absolute min-h-[733px] w-[1920px] h-[500px] bg_img"></div>
   <div class="header__container _container">
     <div class="header__body">
       <div
@@ -65,11 +64,15 @@ import WhiteH4 from "./WhiteH4.astro";
         </div>
 
         <div class="mb-[17px] md:mb-[34px]">
-          <WhiteH2 dataAos="fade-in">Тандыр из высококачественного огнестойкого кирпича и металла</WhiteH2>
+          <WhiteH2 dataAos="fade-in">
+            Тандыр из высококачественного огнестойкого кирпича и металла
+          </WhiteH2>
         </div>
 
         <div class="mb-[30px] md:mb-[60px]">
-          <WhiteH3 dataAos="fade-in">Для непревзойденного вкуса и атмосферы</WhiteH3>
+          <WhiteH3 dataAos="fade-in">
+            Для непревзойденного вкуса и атмосферы
+          </WhiteH3>
         </div>
 
         <div
@@ -85,7 +88,9 @@ import WhiteH4 from "./WhiteH4.astro";
         </div>
 
         <div class="mb-[17px] md:mb-[34px]">
-          <WhiteH4 dataAos="fade-in">Подберите тандыр всего за 1 минуту</WhiteH4>
+          <WhiteH4 dataAos="fade-in">
+            Подберите тандыр всего за 1 минуту
+          </WhiteH4>
         </div>
 
         <div
@@ -100,22 +105,15 @@ import WhiteH4 from "./WhiteH4.astro";
 
 <style>
   .header {
-    background: url(/src/assets/img/back5.jpg) center center/ cover no-repeat;
+    background-image: linear-gradient(
+      147deg,
+      rgb(86, 77, 78) 0%,
+      rgb(43, 34, 35) 74% /*rgb(234, 140, 85) 74%*/
+    );
   }
   .wIcon {
     fill: #ffffff;
     width: 21px;
     height: auto;
-  }
-  .bg_img {
-    background: url(/src/assets/img/back5.jpg) 70% 80%/ 200px auto no-repeat;
-  }
-  .mask1 {
-    mask-image: radial-gradient(
-      circle at 49% 50%,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(123, 122, 122, 1) 47%,
-      rgba(0, 0, 0, 1) 100%
-    );
   }
 </style>
