@@ -13,6 +13,7 @@ import img04 from "../assets/img/gallery/04.jpg";
 import img05 from "../assets/img/gallery/05.jpg";
 import img06 from "../assets/img/gallery/06.jpg";
 import WorksCard from "./WorksCard.astro";
+import WhiteH2 from "./WhiteH2.astro";
 ---
 
 <section id="raboty" class="works">
@@ -22,7 +23,7 @@ import WorksCard from "./WorksCard.astro";
         <RedP dataAos="fade-in">Посмотрите и оцените</RedP>
       </div>
       <div class="mt-[5px] min-[500px]:mt-[10px] flex justify-center">
-        <BlackH2 dataAos="fade-in">Наши работы</BlackH2>
+        <WhiteH2 dataAos="fade-in">Наши работы</WhiteH2>
       </div>
       <div
         class="flex flex-wrap justify-center gap-5 mt-[35px] min-[500px]:mt-[70px]"
@@ -67,3 +68,9 @@ import WorksCard from "./WorksCard.astro";
     </div>
   </div>
 </section>
+
+<style>
+  .works {
+    background: url(../assets/img/back8.jpg) center center/cover no-repeat;
+  }
+</style>

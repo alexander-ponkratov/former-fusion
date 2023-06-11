@@ -2,7 +2,7 @@
 import BlackH2 from "./BlackH2.astro";
 import BlackH3 from "./BlackH3.astro";
 import BlackH3S from "./BlackH3S.astro";
-import FireplaceCard from "./FireplaceCard.astro";
+import FireplaceCardSmall from "./FireplaceCardSmall.astro";
 import ModalVideo from "./ModalVideo.vue";
 import RedButton from "./RedButton.astro";
 import RedP from "./RedP.astro";
@@ -11,23 +11,22 @@ import video from "../assets/img/video.mp4";
 
 <section id="kaminopech" class="fireplace">
   <div class="fireplace__container _container">
-    <div class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10 mb-[70px] min-[500px]:mb-[140px]"
+    <div
+      class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10 mb-[70px] min-[500px]:mb-[140px]"
     >
-      <div class="left__wrapper max-w-[375px] mx-auto min-[500px]:mx-0">
+      <div class="left__wrapper max-w-[381px] mx-auto min-[500px]:mx-0">
         <div class="mt-[45px] min-[500px]:mt-[90px]">
-          <RedP dataAos="fade-in">Ваши дрова</RedP>
+          <RedP dataAos="fade-right">Ваши дрова</RedP>
         </div>
         <div class="mt-[13px] min-[500px]:mt-[26px]">
-          <BlackH2 dataAos="fade-in">Наши камино-печи</BlackH2>
+          <BlackH2 dataAos="fade-right">Наши камино-печи</BlackH2>
         </div>
         <div class="mt-[40px] min-[500px]:mt-[80px]">
-          <BlackH3 dataAos="fade-in">
-            Мы создаем традиционные камино-печи из огнестойкого кирпича марки
-            ША-5 и металла. Наши печи предлагают безопасность, долговечность и
-            благоприятное воздействие на здоровье, чтобы вы могли наслаждаться
-            теплом и уютом в вашем доме.
+          <BlackH3 dataAos="fade-right">
+            Задумались о новой печи, но не знаете на чем остановить выбор?
           </BlackH3>
         </div>
+
         <div
           class="text-center min-[500px]:text-start mt-[35px] min-[500px]:mt-[70px]"
         >
@@ -45,40 +44,76 @@ import video from "../assets/img/video.mp4";
 
       <div class="right__wrapper max-w-[700px] mx-auto min-[500px]:mx-0">
         <div
-          class="mt-[45px] min-[500px]:mt-[90px] flex flex-col gap-y-8 min-[500px]:gap-y-10"
+          class="mt-[45px] min-[500px]:mt-[90px] flex flex-col gap-y-2 min-[500px]:gap-y-2"
         >
-          <FireplaceCard dataAos="fade-in" title="Теплонакопительные">
-            <div class="mt-[10px] min-[500px]:mt-[20px]">
-              <BlackH3S>
-                При разовой протопке печь удерживает тепло и отдает его
-                постепенно <b>на протяжении 12-48 часов</b> (в зависимости от печи).
-                В 5 раз экономнее чугунных печей.
-              </BlackH3S>
-            </div>
-          </FireplaceCard>
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="У вас мало места, каждый сантиметр на учете?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
 
-          <FireplaceCard dataAos="fade-in" title="Безопасные для здоровья">
-            <div class="mt-[10px] min-[500px]:mt-[20px]">
-              <BlackH3S>
-                Наши печи имеют <b>вторичную подачу воздуха в топке</b> (в Европе
-                и США запрещено выпускать печи без вторичной подачи воздуха, так
-                как высвобождается азот, который вредит здоровью). В 5 раз экономнее
-                чугунных печей.
-              </BlackH3S>
-            </div>
-          </FireplaceCard>
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вам не хочется каждый раз мучаться с растопкой, гадать с замиранием сердца, пойдет дым в трубу или в дом?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
 
-          <FireplaceCard dataAos="fade-in" title="Экономные">
-            <div class="mt-[10px] min-[500px]:mt-[20px]">
-              <BlackH3S>
-                Благодаря камере вторичного дожигания дымовых газов в наших
-                печах увеличивается её дымовая эффективность <b
-                  >Помещение отапливается быстрее и требует меньший расход дров</b
-                > (на 100 кв.м. примерно 10 м3 на сезон, что меньше расхода чугунной
-                печи).
-              </BlackH3S>
-            </div>
-          </FireplaceCard>
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вам нужна печь, которая быстро нагревается и долго держит тепло?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вам нужна НАДЕЖНАЯ ПЕЧЬ, которую не придется постоянно подмазывать, подштукатуривать, подкрашивать, делать другой мелкий ремонт буквально сразу после постройки?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вам нужна печь, которая прослужит не один десяток лет?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вы хотите любоваться огнем, пока горят дрова?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вы не хотите растягивать процесс постройки печи на две-три недели?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Три-четыре дня - такой срок бы вас устроил?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+
+          <FireplaceCardSmall
+            dataAos="fade-left"
+            title="Вы всегда ищете лучшее соотношение цены и качества?"
+          >
+            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
+          </FireplaceCardSmall>
+        </div>
+        <div class="mt-5 sm:mt-10">
+          <BlackH3 dataAos="fade-right">
+            Если на большинство вопросов ваш ответ "Да", то <b
+              >круглая кирпичная печь в металлическом футляре это ваша печь!</b>
+          </BlackH3>
         </div>
       </div>
     </div>
