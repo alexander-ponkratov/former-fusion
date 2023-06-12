@@ -12,24 +12,22 @@ import video from "../assets/img/video.mp4";
 <section id="kaminopech" class="fireplace">
   <div class="fireplace__container _container">
     <div
-      class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10 mb-[70px] min-[500px]:mb-[140px]"
+      class="fireplace__body flex max-[768px]:flex-col justify-between gap-x-10 mb-[70px] lg:mb-[140px]"
     >
-      <div class="left__wrapper max-w-[381px] mx-auto min-[500px]:mx-0">
-        <div class="mt-[45px] min-[500px]:mt-[90px]">
+      <div class="left__wrapper lg:max-w-[381px] mx-auto min-[500px]:mx-0">
+        <div class="mt-[45px] lg:mt-[90px]">
           <RedP dataAos="fade-right">Ваши дрова</RedP>
         </div>
-        <div class="mt-[13px] min-[500px]:mt-[26px]">
+        <div class="mt-[13px] lg:mt-[26px]">
           <BlackH2 dataAos="fade-right">Наши камино-печи</BlackH2>
         </div>
-        <div class="mt-[40px] min-[500px]:mt-[80px]">
+        <div class="mt-[40px] lg:mt-[80px]">
           <BlackH3 dataAos="fade-right">
             Задумались о новой печи, но не знаете на чем остановить выбор?
           </BlackH3>
         </div>
 
-        <div
-          class="text-center min-[500px]:text-start mt-[35px] min-[500px]:mt-[70px]"
-        >
+        <div class="text-center lg:text-start mt-[35px] lg:mt-[70px]">
           <ModalVideo
             client:only
             thumb="src/assets/img/back1.jpg"
@@ -42,71 +40,60 @@ import video from "../assets/img/video.mp4";
         </div>
       </div>
 
-      <div class="right__wrapper max-w-[700px] mx-auto min-[500px]:mx-0">
-        <div
-          class="mt-[45px] min-[500px]:mt-[90px] flex flex-col gap-y-2 min-[500px]:gap-y-2"
-        >
+      <div class="right__wrapper lg:max-w-[700px] mx-auto min-[500px]:mx-0">
+        <div class="mt-[45px] lg:mt-[90px] flex flex-col gap-y-[18px] lg:gap-y-[22px]">
           <FireplaceCardSmall
             dataAos="fade-left"
             title="У вас мало места, каждый сантиметр на учете?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вам не хочется каждый раз мучаться с растопкой, гадать с замиранием сердца, пойдет дым в трубу или в дом?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вам нужна печь, которая быстро нагревается и долго держит тепло?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вам нужна НАДЕЖНАЯ ПЕЧЬ, которую не придется постоянно подмазывать, подштукатуривать, подкрашивать, делать другой мелкий ремонт буквально сразу после постройки?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вам нужна печь, которая прослужит не один десяток лет?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вы хотите любоваться огнем, пока горят дрова?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вы не хотите растягивать процесс постройки печи на две-три недели?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Три-четыре дня - такой срок бы вас устроил?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
 
           <FireplaceCardSmall
             dataAos="fade-left"
             title="Вы всегда ищете лучшее соотношение цены и качества?"
           >
-            <div class="mt-[10px] min-[500px]:mt-[20px]"></div>
           </FireplaceCardSmall>
         </div>
         <div class="mt-5 sm:mt-10">
@@ -115,7 +102,8 @@ import video from "../assets/img/video.mp4";
             class="text-[var(--black-color)] font-semibold text-xl md:text-2xl text-center min-[500px]:text-start"
           >
             Если на большинство вопросов ваш ответ "Да", то <b
-              >круглая кирпичная печь в металлическом футляре это ваша печь!</b>
+              >круглая кирпичная печь в металлическом футляре это ваша печь!</b
+            >
           </h3>
         </div>
       </div>
