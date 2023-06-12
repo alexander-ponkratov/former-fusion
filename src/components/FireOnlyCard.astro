@@ -18,6 +18,7 @@ const { dataAos } = Astro.props;
   <div class="fireOnly__imgW max-w-[500px] basis-[45%]">
     <a href={img} target="_blank">
       <img
+        loading="lazy"
         class="rounded-lg shadow-xl dark:shadow-gray-800"
         src={img}
         alt={alt}
