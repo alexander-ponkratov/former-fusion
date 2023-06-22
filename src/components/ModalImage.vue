@@ -20,7 +20,7 @@ const props = defineProps<Props>()
 <template>
     <div>
         <!-- Video thumbnail -->
-        <img  in" @click="modalOpen = true" class="rounded-t-lg" :src=props.imageSrc :alt=props.imageAlt />
+        <img @click="modalOpen = true" class="rounded-t-lg" :src=props.imageSrc :alt=props.imageAlt />
         <!-- End: Video thumbnail -->
         <TransitionRoot :show="modalOpen" as="template">
             <Dialog  @keypress.4="modalOpen = false" @keyup.esc="modalOpen = false" @close="modalOpen = false">
