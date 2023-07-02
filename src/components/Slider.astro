@@ -1,0 +1,44 @@
+---
+import img1 from '../assets/img/fireonly/03.jpg'
+import img2 from '../assets/img/fireonly/03_2.jpg'
+import img3 from '../assets/img/fireonly/03_3.jpg'
+import img4 from '../assets/img/fireonly/03_4.jpg'
+
+---
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper flex items-center ">
+    <div class="swiper-wrapper my-5">
+      <div class="swiper-slide">
+        <img class="rounded-lg shadow-xl dark:shadow-gray-800" src={img1} alt="03">
+      </div>
+      <div class="swiper-slide"><img class="rounded-lg shadow-xl dark:shadow-gray-800" src={img2} alt="03_2"></div>
+      <div class="swiper-slide"><img class="rounded-lg shadow-xl dark:shadow-gray-800" src={img3} alt="03_3"></div>
+      <div class="swiper-slide"><img class="rounded-lg shadow-xl dark:shadow-gray-800" src={img4} alt="03_4"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+<style is:global>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
